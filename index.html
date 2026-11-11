@@ -7,14 +7,19 @@
     <meta property="og:title" content="BEZ HROBOV A PAMÄTNÍKOV" />
     <meta property="og:description" content="Vo vojnách nezomierajú tí, ktorí ich zapríčinili. Zomierajú hlavne tí, ktorí vojnu nikdy nechceli." />
     <meta property="og:image" content="https://holakovsky-glitch.github.io/clanky/obrazok.jpg" />
+    <meta property="og:url" content="https://holakovsky-glitch.github.io/clanky/" />
     <meta property="og:type" content="article" />
 
-    <!-- Okamžité presmerovanie priamo na váš PDF súbor -->
-    <meta http-equiv="refresh" content="0; url=https://holakovsky-glitch.github.io/clanky/clanok.pdf" />
-    
     <title>BEZ HROBOV A PAMÄTNÍKOV</title>
 </head>
 <body>
-    <p>Ak sa dokument neotvoril automaticky, <a href="https://holakovsky-glitch.github.io/clanky/clanok.pdf">kliknite sem</a>.</p>
+    <p>Načítavam dokument... Ak sa neotvoril automaticky, <a href="clanok.pdf">kliknite sem</a>.</p>
+
+    <!-- Presmerovanie cez JavaScript (Facebook ho nespustí, čitateľa hneď presmeruje) -->
+    <script>
+        setTimeout(function() {
+            window.location.href = "clanok.pdf";
+        }, 400);
+    </script>
 </body>
 </html>
